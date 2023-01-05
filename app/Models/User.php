@@ -17,8 +17,11 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    protected $primaryKey = 'user_id';
+
     protected $fillable = [
         'name',
+        'address',
         'email',
         'password',
     ];
@@ -41,4 +44,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function photos()
+    {
+        return $this->hasMany('App\Models\UserPhoto', 'user_id', 'user_id');
+    }
+
+    public function creditcard()
+    {
+        return $this->hasMany('App\Models\UserCreditCard', 'user_id', 'user_id');
+    }
 }

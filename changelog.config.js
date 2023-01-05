@@ -5,7 +5,7 @@ module.exports = {
   maxMessageLength: 64,
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject'],
-  scopes: ['other', 'auth', 'company', 'driver', 'third_party_auth', 'transfer', 'user', 'wallet', 'user', 'infra', 'helper', 'auth-jwt'],
+  scopes: ['other', 'user'],
   types: {
     chore: {
       description: 'Build process or auxiliary tool changes',
