@@ -19,7 +19,7 @@ Cara import postman collection:
 
 postman collection sudah berhasil di import.
 
-## Instalasi project
+## Instalasi Project
 
 - Clone project dari github ssh
 - Copy .env.example ke .env
